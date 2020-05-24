@@ -1,6 +1,7 @@
 package com.hervey.app;
 
 public class TapWater implements Beverage {
+	//tapwater is free and comes with no container...just water and whatever minerals came from the
 	
 	public  TapWater() {
 		System.out.println("TapWater object created");
@@ -12,4 +13,7 @@ public class TapWater implements Beverage {
 		return false;
 	}
 
+	public boolean resealableContainer = false;
+	
+	
 }
