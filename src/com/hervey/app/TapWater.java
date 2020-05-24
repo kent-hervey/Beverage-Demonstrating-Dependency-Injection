@@ -1,11 +1,15 @@
 package com.hervey.app;
 
 public class TapWater implements Beverage {
+	
+	public  TapWater() {
+		System.out.println("TapWater object created");
+	}
 
 	@Override
-	public Beverage pickCreateBeverage() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean satisfyThirst() {
+		System.out.println("TapWater satisfies thirs");
+		return false;
 	}
 
 }
