@@ -8,7 +8,7 @@ public class BeverageMaker {
 			beverage = new TapWater();
 		}
 		else {
-			beverage = new TapWater();
+			beverage = new ErrorBeverage();
 		}
 		
 		
