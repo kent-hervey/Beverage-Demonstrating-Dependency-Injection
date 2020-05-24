@@ -11,6 +11,11 @@ public class BeverageService {
 	static boolean supersweet;
 	static boolean carbonated;
 	
+	boolean nightTime = false;
+	boolean teetotaler = true;
+	boolean sweetTooth = false;
+	boolean diabetic = true;
+	
 	static Beverage  processBeverage(boolean fun) { //if not fun, then cheap
 		if(!fun) {
 			 alcohol = false;
