@@ -14,12 +14,12 @@ public class BeverageMaker {
 			beverage = new TapWater();
 		}
 
-//		else if(!alcohol && flavoring && !supersweet && !carbonated) {
-//			beverage = new DrPepper();
-//			
-//			
-//			
-//		}
+		else if(!alcohol && flavoring && !supersweet && carbonated) {
+			beverage = new DrPepper();
+			
+			
+			
+		}
 		
 		
 		else {

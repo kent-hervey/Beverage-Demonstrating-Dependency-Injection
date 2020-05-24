@@ -19,9 +19,9 @@ public class BeverageService {
 	static Beverage  processBeverage(boolean fun) { //if not fun, then cheap
 		if(!fun) {
 			 alcohol = false;
-			 flavoring = false;
+			 flavoring = true;
 			 supersweet = false;
-			 carbonated = false;
+			 carbonated = true;
 			
 		}
 
