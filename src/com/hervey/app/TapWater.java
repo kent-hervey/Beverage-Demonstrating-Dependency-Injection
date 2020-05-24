@@ -14,6 +14,12 @@ public class TapWater implements Beverage {
 	}
 
 	public boolean resealableContainer = false;
+
+	@Override
+	public boolean isItResealable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 }

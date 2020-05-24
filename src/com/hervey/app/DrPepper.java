@@ -4,6 +4,8 @@ public class DrPepper implements Beverage {
 	
 	public DrPepper() {
 		System.out.println("Liquid Happiness created");
+		
+		
 	}
 
 	@Override
@@ -12,7 +14,19 @@ public class DrPepper implements Beverage {
 		return true;
 	}
 	
+	
+	
+	
 	public boolean resealableContainer = true;
+
+
+
+
+	@Override
+	public boolean isItResealable() {
+		// TODO Auto-generated method stub
+		return true;
+	}
 	
 
 }
