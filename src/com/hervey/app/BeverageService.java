@@ -3,9 +3,25 @@ package com.hervey.app;
 //Calls the method that creates the needed object
 
 public class BeverageService {
+	//using this class and below method(s) allows for flexibility and extensibility
+	//currently algorithms for selecing the specific beverage reside in the BeverageMaker class, but some pre-decision-making could end up in this class
 	
-	static Beverage  processBeverage() {
-		Beverage beverage = BeverageMaker.pickCreateBeverage();
+	static boolean alcohol;
+	static boolean flavoring;
+	static boolean supersweet;
+	static boolean carbonated;
+	
+	static Beverage  processBeverage(boolean fun) { //if not fun, then cheap
+		if(!fun) {
+			 alcohol = false;
+			 flavoring = false;
+			 supersweet = false;
+			 carbonated = false;
+			
+		}
+
+		Beverage beverage = BeverageMaker.pickCreateBeverage(alcohol, flavoring, supersweet, carbonated);
+
 		return beverage;
 		
 		
