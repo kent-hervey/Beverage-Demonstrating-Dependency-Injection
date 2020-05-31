@@ -17,9 +17,10 @@ public class BeverageService {
 
 	static Beverage processBeverage(boolean fun, int userID, boolean isPortable) { // if not fun, then cheap
 		// below simulates results of calling service to determine user's attributes
+		//to be updated
 		boolean nightTime = false;
 		boolean teatotaler = true;
-		boolean sweetTooth = false;
+		boolean sweetTooth = true;
 		boolean diabetic = false;
 		Beverage beverage = null;
 
