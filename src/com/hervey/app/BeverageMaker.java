@@ -2,6 +2,15 @@ package com.hervey.app;
 
 public class BeverageMaker {
 
+	
+	/**<pickCreateBeverage>
+	 * 
+	 * @param alcohol
+	 * @param flavoring
+	 * @param supersweet
+	 * @param carbonated
+	 * @return
+	 */
 	public static Beverage pickCreateBeverage(boolean alcohol, boolean flavoring, boolean supersweet,
 			boolean carbonated) {
 		Beverage beverage;
