@@ -8,11 +8,14 @@ public class BeverageApp {
 		int userID;
 		boolean isFun;
 		boolean isPortable;
+
 		
 		//simulates data from user interface for first user
 		userID=5;
 		isFun = true;
 		isPortable = false;
+		
+
 		
 		Beverage beverage = BeverageService.processBeverage(isFun, userID, isPortable); //use false to indicate not a fun beverage
 		

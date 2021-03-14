@@ -4,7 +4,7 @@ public class BeverageMaker {
 
 	
 	/**<pickCreateBeverage>
-	 * 
+	 * uses parameters to pick a beverage
 	 * @param alcohol
 	 * @param flavoring
 	 * @param supersweet
@@ -20,7 +20,12 @@ public class BeverageMaker {
 		}
 
 		else if (!alcohol && flavoring && !supersweet && carbonated) {
-			beverage = new DrPepper();
+			if(BeverageService.isPepsiOnSale) {
+				beverage = new Pepsi();
+			}
+			else {
+				beverage = new DrPepper();
+			}
 		}
 
 		else if (!alcohol && !flavoring && !supersweet && carbonated) {

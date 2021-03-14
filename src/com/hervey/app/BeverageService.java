@@ -14,6 +14,12 @@ public class BeverageService {
 	static boolean flavoring;
 	static boolean supersweet;
 	static boolean carbonated;
+	static boolean isPepsiOnSale=false;
+	
+	//simulates database lookup of current parameters
+	
+
+	
 
 	static Beverage processBeverage(boolean fun, int userID, boolean isPortable) { // if not fun, then cheap
 		// below simulates results of calling service to determine user's attributes
@@ -23,11 +29,11 @@ public class BeverageService {
 		boolean sweetTooth = true;
 		boolean diabetic = false;
 		Beverage beverage = null;
+		
 
 		if (!fun) {
-			beverage = BeverageMaker.pickCreateBeverage(false, false, false, false); // alcohol, flavoring, supersweet,
-																						// carbonated
-
+			beverage = BeverageMaker.pickCreateBeverage(false, false, false, false); 
+			// alcohol, flavoring, supersweet, carbonated
 		}
 
 		else {
@@ -51,4 +57,7 @@ public class BeverageService {
 
 	}
 
+	
+	
+	
 }
